@@ -49,7 +49,7 @@ const Movie = () => {
           </div>
           <div>
             <Link
-              className="flex w-[196px] justify-center gap-9 h-24 bg-white items-center    hover:bg-[#d59e9e] hover:border-r-8 hover:border-[#BE123C]"
+              className="flex lg:w-[196px] justify-center gap-9 h-24 bg-white items-center    hover:bg-[#d59e9e] hover:border-r-8 hover:border-[#BE123C]"
               to="/"
             >
               <img src={Home} />
@@ -77,7 +77,7 @@ const Movie = () => {
               </p>
             </span>
           </div>
-          <div className="w-38 flex flex-col hidden lg:block gap-2 pt-16  mt-10 pb-4 px-4 border  border-[#BE123C]/70 rounded-[20px] bg-[#F8E7EB]/40">
+          <div className="w-38 flex-col hidden lg:flex gap-2 pt-16  mt-10 pb-4 px-4 border  border-[#BE123C]/70 rounded-[20px] bg-[#F8E7EB]/40">
             <h2 className="text-[#333333] opacity-80 text-sm font-semibold leading-normal ">
               Play movie quizes <br /> and earn <br />
               free tickets
@@ -102,7 +102,7 @@ const Movie = () => {
             />
           </div>
 
-          <div className="mt-8  grid lg:grid-cols-3 gap-16  ">
+          <div className="mt-8  grid lg:grid-cols-3  gap-4 lg:gap-16  ">
             <div className="col-span-2">
               <div className="flex gap-4">
                 <span
@@ -115,7 +115,6 @@ const Movie = () => {
                   data-testid="movie-release-date"
                   className=" text-[10px] lg:text-[20px] list-disc font-normal text-[#404040]"
                 >
-                  {movies.release_date}
                   {new Date(movies.release_date).toUTCString()}
                 </span>
                 <span className=" text-[10px] lg:text-[20px] list-disc font-normal tet-[#404040]">
@@ -165,11 +164,11 @@ const Movie = () => {
                   John Bell
                 </p>
               </span>
-              <div className="grid mt-10 grid-cols-4">
+              <div className="grid mt-10  lg:grid-cols-4">
                 <div className="bg-[#BE123C] flex rounded-[10px] justify-center font-[Poppins] col-span-1 text-white font-medium text-xl leading-normal items-center px-4 py-5">
                   Top Rated Movie #65
                 </div>
-                <div className="flex px-6 font-medium text-xl leading-normal col-span-3 font-[Poppins] text-[#333] items-center justify-between rounded-[10px] border border-solid border-[ #C7C7C7] bg-[#FFFFFF]/80">
+                <div className="flex px-6 font-medium text-xl leading-normal lg:col-span-3 font-[Poppins] text-[#333] items-center justify-between rounded-[10px] border border-solid border-[ #C7C7C7] bg-[#FFFFFF]/80">
                   Awards 9 noiminations
                   <img src={expand_arrow} />
                 </div>
@@ -185,7 +184,7 @@ const Movie = () => {
                   350k
                 </p>
               </div>
-              <div className="max-w-[360px] w-full gap-1 h-[55px] flex justify-center items-center rounded-[10px] bg-[#BE123C]">
+              <div className="lg:max-w-[360px] w-full gap-1 h-[55px] flex justify-center items-center rounded-[10px] bg-[#BE123C]">
                 <img alt="two-ticks" src={two_ticks} />
                 <p className="text-white font-medium text-xl leading-normal font-[Poppins] ">
                   See Showtimes
