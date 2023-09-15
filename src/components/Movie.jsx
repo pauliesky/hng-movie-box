@@ -40,10 +40,10 @@ const Movie = () => {
   return (
     <>
       <section className="flex">
-        <aside className="h-full flex flex-col items-center w-[196px] py-6 border border-r border-gray rounded-r-[45px] fixed z-10 top-0 left-0 overflow-x-hidden">
+        <aside className="h-full flex flex-col items-center w-[100px]  lg:w-[196px] py-6 border border-r border-gray rounded-r-[45px] fixed z-10 top-0 left-0 overflow-x-hidden">
           <div className="mt-5 flex justify-center gap-6 items-center mb-6">
             <img src={MB_Icon} />
-            <p className="font-sans text-2xl normal leading-6 font-bold text-[#333333]">
+            <p className="font-sans hidden lg:block text-2xl normal leading-6 font-bold text-[#333333]">
               Movie Box
             </p>
           </div>
@@ -53,31 +53,31 @@ const Movie = () => {
               to="/"
             >
               <img src={Home} />
-              <p className="text-[#666] max-w-[80px]  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
+              <p className="text-[#666] max-w-[80px] hidden lg:block  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
                 Home
               </p>
             </Link>
 
             <span className="flex w-[196px] cursor-pointer justify-center gap-9 h-24 bg-white items-center    hover:bg-[#d59e9e] hover:border-r-8 hover:border-[#BE123C] ">
               <img src={Movie_Logo} />
-              <p className="text-[#666] max-w-[80px]  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
+              <p className="text-[#666] max-w-[80px] hidden lg:block hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
                 Movies
               </p>
             </span>
             <span className="flex w-[196px] cursor-pointer justify-center gap-9 h-24 bg-white items-center    hover:bg-[#d59e9e] hover:border-r-8 hover:border-[#BE123C]">
               <img src={TV} />
-              <p className="text-[#666] max-w-[80px]  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
+              <p className="text-[#666] max-w-[80px] hidden lg:block  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
                 TV Series
               </p>
             </span>
             <span className="flex w-[196px] cursor-pointer justify-center gap-9 h-24 bg-white items-center  hover:bg-[#d59e9e] hover:border-r-8 hover:border-[#BE123C]">
               <img src={Calendar} />
-              <p className="text-[#666] max-w-[80px]  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
+              <p className="text-[#666] max-w-[80px] hidden lg:block  hover:text-[#BE123C] w-full text-left text-xl font-semibold leading-normal">
                 Upcoming
               </p>
             </span>
           </div>
-          <div className="w-38 flex flex-col gap-2 pt-16  mt-10 pb-4 px-4 border  border-[#BE123C]/70 rounded-[20px] bg-[#F8E7EB]/40">
+          <div className="w-38 flex flex-col hidden lg:block gap-2 pt-16  mt-10 pb-4 px-4 border  border-[#BE123C]/70 rounded-[20px] bg-[#F8E7EB]/40">
             <h2 className="text-[#333333] opacity-80 text-sm font-semibold leading-normal ">
               Play movie quizes <br /> and earn <br />
               free tickets
@@ -89,12 +89,12 @@ const Movie = () => {
               Start Playing
             </div>
           </div>
-          <span className="flex w-[196px] cursor-pointer  mt-6 justify-center gap-9 h-24 bg-white items-center">
+          <span className="flex w-[196px] cursor-pointer   mt-6 justify-center gap-9 h-24 bg-white items-center">
             <img src={Logout} />
-            <p>Logout</p>
+            <p className="hidden lg:block">Logout</p>
           </span>
         </aside>
-        <article className="w-full mr-16 ml-[226px]">
+        <article className="w-full mr-16 ml-[126px] lg:ml-[226px]">
           <div className="w-full mt-[38px] max-w-[1198px] h-[359px]">
             <img
               src={`https://image.tmdb.org/t/p/original${movies.poster_path}`}
@@ -102,7 +102,7 @@ const Movie = () => {
             />
           </div>
 
-          <div className="mt-8  grid grid-cols-3 gap-16  ">
+          <div className="mt-8  grid lg:grid-cols-3 gap-16  ">
             <div className="col-span-2">
               <div className="flex gap-4">
                 <span
