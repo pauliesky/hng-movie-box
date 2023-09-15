@@ -2,13 +2,15 @@
 // import React from 'react'
 import Imbd from "../assets/imdb.svg";
 import Tomatoe from "../assets/tomato.svg";
+import favourite from "../assets/Favorite.svg";
 
 const MovieCard = ({ release_date, original_title, poster_path }) => {
   return (
     <section
       data-testid="movie-card"
-      className="md:max-w-[250px] w-full h-[490px] flex flex-col gap-3"
+      className="md:max-w-[250px] relative w-full h-[490px] flex flex-col gap-3"
     >
+      <img className="h-[20px] w-[20px] right-0  hover:bg-sky-400 absolute" src={favourite} />
       <img
         data-testid="movie-poster"
         className=" h-[370px]"

@@ -20,12 +20,12 @@ const Hero = () => {
         </div>
       </nav>
 
-      <div className=" w-[200px] relative">
-        <img className="max-w-none" alt="poster" src={Poster} />
+      <div className="  relative">
+        <img className="max-w-none w-full" alt="poster" src={Poster} />
       </div>
       {/* <div  style={background-image: `url${}` }className="bg-fixed"></div> */}
-      <div className=" max-w-[404px] w-full text-white font-sans absolute top-48 left-24 flex flex-col gap-4 ">
-        <h1 className=" text-7xl text-sky  normal-case font-bold leading-[56px] ">
+      <div className=" max-w-[404px] w-full text-white font-sans absolute lg:top-48 left-24 flex flex-col gap-4 ">
+        <h1 className=" lg:text-7xl text-sky  normal-case font-bold leading-[56px] ">
           John Wick 3 : <br /> Parabellum
         </h1>
         <span className="flex my-2 gap-[34px] ">

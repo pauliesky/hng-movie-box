@@ -127,12 +127,12 @@ const Movie = () => {
                 >
                   {movies.runtime}
                 </span>
-                <span className="border py-1 px-4 text-center border-[#F8E7EB] text-[#B91C1C] text-[15px] rounded-full">
+                {/* <span className="border py-1 px-4 text-center border-[#F8E7EB] text-[#B91C1C] text-[15px] rounded-full">
                   Action
                 </span>
                 <span className="border py-1 px-4  text-center border-[#F8E7EB] text-[#B91C1C] text-[15px] rounded-full">
                   Drama
-                </span>
+                </span> */}
               </div>
               <div
                 data-testid="movie-overview"
@@ -145,7 +145,7 @@ const Movie = () => {
                   Director:
                 </p>
                 <p className="text-[#BE123C] ml-2  font-normal text-xl">
-                  Joseph Smihth
+                  Joseph Smith
                 </p>
               </span>
 
@@ -165,7 +165,7 @@ const Movie = () => {
                   John Bell
                 </p>
               </span>
-              <div className="grid grid-cols-4">
+              <div className="grid mt-10 grid-cols-4">
                 <div className="bg-[#BE123C] flex rounded-[10px] justify-center font-[Poppins] col-span-1 text-white font-medium text-xl leading-normal items-center px-4 py-5">
                   Top Rated Movie #65
                 </div>
