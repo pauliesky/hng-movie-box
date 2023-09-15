@@ -107,18 +107,18 @@ const Movie = () => {
               <div className="flex gap-4">
                 <span
                   data-testid="movie-title"
-                  className="text-[20px] list-disc font-normal text-[#404040]"
+                  className=" text-[10px] lg:text-[20px] list-disc font-normal text-[#404040]"
                 >
                   {movies.original_title}
                 </span>
                 <span
                   data-testid="movie-release-date"
-                  className="text-[20px] list-disc font-normal text-[#404040]"
+                  className=" text-[10px] lg:text-[20px] list-disc font-normal text-[#404040]"
                 >
                   {movies.release_date}
                   {new Date(movies.release_date).toUTCString()}
                 </span>
-                <span className="text-[20px] list-disc font-normal tet-[#404040]">
+                <span className=" text-[10px] lg:text-[20px] list-disc font-normal tet-[#404040]">
                   PG-13x
                 </span>
                 <span
